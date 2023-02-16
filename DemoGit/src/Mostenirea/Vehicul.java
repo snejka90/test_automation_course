@@ -1,15 +1,12 @@
 package Mostenirea;
 
-public class Vehicul{
+public class Vehicul {
 
-   String culoare;
-   Integer nrRoti;
+    String culoare;
+    Integer nrRoti;
 
-    public String getCuloare(){
-        return culoare;
+
+    public static void afiseazaDetaliiVehicul() {
+        System.out.println("afiseaza detalii vehicul");
     }
-    public Integer getNrRoti(){
-        return nrRoti;
-    }
-
 }
