@@ -1,5 +1,13 @@
 package topic2;
 
+import Abstractia.FormaGeometrica;
+import Abstractia.Patrat;
+import Abstractia.Triunghi;
+import Mostenirea.Masina;
+import Polimorfism.Animal;
+import Polimorfism.Caine;
+import Polimorfism.Pisica;
+
 public class Persoana {
 
     public String prenume;
@@ -32,4 +40,34 @@ public class Persoana {
     }
 
 
+    public static class AbstractApplication {
+
+        public static void main(String...args) {
+            FormaGeometrica formaGeometrica = new Triunghi();
+            FormaGeometrica formaGeometrica1 = new Patrat();
+
+            formaGeometrica.calculArie();
+            formaGeometrica1.calculArie();
+        }
+    }
+
+    public static class Application {
+
+        public static void main(String... args) {
+            Masina masina = new Masina( "Skoda" );
+            masina.afiseazaDetaliiVehicul();
+
+            Animal pisica = new Pisica();
+            pisica.emiteSunet();
+
+            Animal caine = new Caine();
+            caine.emiteSunet();
+        }
+    }
+
+    public static class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello world!");
+        }
+    }
 }
