@@ -23,7 +23,7 @@ public class ContulPersoanei {
             throw new IllegalArgumentException("Name is too short");
         this.numePersoana=numePersoana;
     }
-    public int getId(){
+    public Integer getId(){
         return id;
     }
     public void setId(int id) throws Exception {
@@ -42,4 +42,5 @@ public class ContulPersoanei {
             throw new IllegalArgumentException("Undelivered to person without name");
     this.transferCatreOPersoana(nume,suma);
     }
+
 }
